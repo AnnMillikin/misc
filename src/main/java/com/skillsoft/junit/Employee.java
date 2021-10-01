@@ -1,5 +1,6 @@
 package com.skillsoft.junit;
 
+// simple
 public class Employee {
     private String employeeName;
     private String role;

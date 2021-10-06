@@ -24,6 +24,14 @@ import org.junit.jupiter.params.provider.ValueSource;
 import javax.naming.InvalidNameException;
 import java.util.stream.Stream; // needed with the above
 
+/**
+ * Mockito
+ * - mocks create an entirely new dummy object
+ * - spies define behavior for specific methods
+ * - argument captors verify input arguments
+ * - argument matchers to specify input arguments
+ *
+ */
 public class EmployeeTest {
     static Employee employee;
     static double salary;
@@ -46,6 +54,10 @@ public class EmployeeTest {
         return Stream.of("Al4d", "B3nson", "$mith", "@lford");
     }
 
+    /**
+     *
+     * @param name
+     */
     @ParameterizedTest
     @MethodSource("getLastNames") // method defined above to use for this test
     @DisplayName("method name test")

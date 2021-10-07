@@ -22,6 +22,7 @@ import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import javax.naming.InvalidNameException;
+import java.util.ArrayList;
 import java.util.stream.Stream; // needed with the above
 
 /**
@@ -119,6 +120,8 @@ public class EmployeeTest {
     void emptyAndNullNameTest(String name){
         Employee employee = new Employee(name, "DevOps Engineer", salary, "Tester");
         assertTrue(employee.getEmployeeName() == null || employee.getEmployeeName().isEmpty());
+        ArrayList list = new ArrayList();
+        assertTrue(list.isEmpty());
     }
 
 
